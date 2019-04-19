@@ -1,7 +1,7 @@
 public class SearchAndSort {
   public static void main(String[]args) {
     // Three sorts for the exam are selection sort, insertion sort, and merge sort
-    // One sort for the exam is binary sort
+    // Two sorts for the exam are binary search and sequential search
     
     // Methods shown will assume arrays of ints (Strings sort by ASCII, with lowercase being higher in value than uppercase)
   }
