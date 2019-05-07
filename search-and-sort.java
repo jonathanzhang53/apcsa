@@ -2,6 +2,7 @@ public class SearchAndSort {
   public static void main(String[]args) {
     // Three sorts for the exam are selection sort, insertion sort, and merge sort
     // Two sorts for the exam are binary search and sequential search
+      // Sequential search is simply starting from the first or last term and searching until the end or beginning (see methods.java)
     
     // Methods shown will assume arrays of ints (Strings sort by ASCII, with lowercase being higher in value than uppercase)
   }
