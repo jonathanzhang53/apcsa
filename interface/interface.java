@@ -1,5 +1,5 @@
-public interface AnInterface {
+public interface PersonInterface {
   // Methods
-  void display(boolean in);
-  int sum(int num1, int num2);
+  void genderSet(boolean in);
+  int ageUp();
 }
