@@ -18,7 +18,7 @@ public class SearchAndSort {
     int mid = 0;
 
     // iterates over arr to search for the key
-    while(low <= high) {
+    while (low <= high) {
       mid = (low + high) / 2;
       
       // checking middle index and identifying whether to go left or right of middle
@@ -34,14 +34,41 @@ public class SearchAndSort {
   }
   
   /* SELECTION SORT
+   * Array may be unsorted, but will still run through each term
    */
   public static void selectionSort(int[] arr) {
-    
+    // sorts through each term and finds minimum after it in the arr
+    for (int i = 0; i < arr.length - 1; i++) {
+      int index = i;
+      for (int j = i + 1; j < arr.length; j++)
+        if (arr[j] < arr[index]) {
+          index = j;
+        }
+      
+        // swapping min and term at arr[i]
+        int smallerNumber = arr[index];
+        arr[index] = arr[i];
+        arr[i] = smallerNumber;
+    }
   }
   
   /* INSERTION SORT
+   * Array may be unsorted, but will still run through each term
    */
   public static void insertionSort(int[] arr) {
+    int n = array.length;
     
+    // compares two successive terms and moves the second term back
+    for (int j = 1; j < n; j++) {
+      int key = array[j];
+      int i = j-1;
+      
+      // continuously moves term back if it is less than the term before it
+      while ( (i > -1) && ( array [i] > key ) ) {
+        array [i+1] = array [i];
+        i--;
+      }
+      array[i+1] = key;
+    }
   }
 }
