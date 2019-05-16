@@ -35,9 +35,33 @@ public class Syntax {
     int lenArr = gradebook.length; // lenArr = 25, no parentheses following length
     
     /* ARRAYLISTS */
-      
+    ArrayList<Integer> arrl = new ArrayLise<Integer>();
+    arrl.add(2); // {2}
+    arrl.add(0,1); // {1,2}
+    System.out.println(arrl.set(0,3)); // {3,2} returns 1
+    System.out.println(arrl.remove(0)); // {2} returns 3
+    System.out.println(arrl.size()); // returns 1
+    
     /* LOOPS */
+    // for, while, for each
+    // try to use regular for loops in FRQs
     
     /* IF, ELSE IF, ELSE */
+    boolean condition = false;
+    if (condition) {
+      // does whatever is here if condition == true
+      // will not get here due to false outcome, moves on
+    } else if (!condition) {
+      // does whatever is here if condition == true
+      // ends up executing this due to true outcome
+    } else if (1 == 1) {
+      // even though true, will never execute due to the above condition ending the loop when executed
+      // if the else was removed in "else if" then this would execute
+    }
+    if (condition) {
+      // does this, but won't
+    } else {
+      // does this if NONE of above conditions evaluate to true
+    }
   }
 }
