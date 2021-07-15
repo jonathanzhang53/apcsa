@@ -1,5 +1,5 @@
-# apcsa-api
-API Guide to AP Computer Science A
+# APCSA
+Guide to AP Computer Science A
 
 Recommended Order of Review:
 - syntax.java 
